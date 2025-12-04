@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>NewJeans Collection</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/lightslider.css"/>
+
+	<script src="jQuery.js"></script>
+	
+	<script src="main.js" async></script>
+
+	<script src="js/lightslider.js"></script>
+
+	<link rel="shortcut icon" href="images/logo.jpg"/>
+
+	<script src="https://kit.fontawesome.com/494a946aec.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<nav>
+		<div class="social-media">
+			<div class="social">
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#"><i class="fa-solid fa-envelope"></i></a>
+			</div>
+
+			<div class="phone">
+				<span><a href="#"><i class="fa-solid fa-phone"></i></a>+639912345678</span>
+			</div>
+
+		</div>
+
+		<div class="nav">
+			<a href="#" class="icon">
+				<img src="images/logo.jpg">
+			</a>
+
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#categories" class="categories">Categories</a></li>
+				<li><a href="#products">Products</a></li>
+			</ul>
+
+			<div class="right-menu">
+				<a href="javascript:void(0);" class="search">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</a>
+
+				<a href="javascript:void(0);" class="user">
+					<i class="fa-solid fa-user"></i>
+				</a>
+
+				<a href="javascript:void(0);">
+					<i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+				</a>
+
+				<div class="cart">
+					<h2 class="cart-title">Your Cart</h2>
+
+					<div class="cart-content">
+                        </div>
+					
+                    <div class="total">
+						<div class="total-title">Total</div>
+						<div class="total-price">$0</div>
+					</div>
+
+					<button type="button" class="btn-buy">Buy Now</button>
+
+					<i class="fa-solid fa-xmark" id="close-cart"></i>
+				</div>
+
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	<div class="search-bar">
+		<div class="search-input">
+			<input type="text" placeholder="Search"/>
+			<a href="javascript:void(0);" class="search-cancel">
+				<i class="fa-solid fa-xmark"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="form">
+		<div class="login-form">	
+			<form>
+				<a href="javascript:void(0);" class="form-cancel">
+					<i class="fa-solid fa-xmark"></i>
+				</a>
+				<strong>Log In</strong>
+				<input type="email" placeholder="example@gmail.com" name="email" required>
+				<input type="password" placeholder="Password" name="password" required>
+				<input type="submit" value="Log In">
+				<div class="form-bttn">
+				<a href="javascript:void(0);" class="sign-up">Create Account</a>
+				<a href="javascript:void(0);" class="forgot">Forgot your password?</a>
+				</div>
+			</form>
+		</div>
+
+		<div class="sign-up-form">	
+			<form>
+				<a href="javascript:void(0);" class="form-cancel">
+					<i class="fa-solid fa-xmark"></i>
+				</a>
+				<strong>Sign Up</strong>
+				<input type="text" placeholder="Full Name" name="fullname" required>
+				<input type="password" placeholder="Password" name="password" required>
+				<input type="submit" value="Sign Up">
+				<div class="form-bttn">
+				<a href="javascript:void(0);" class="have-account">Already have an account?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<ul id="adaptive" class="cs-hidden">
+	  <li class="item-a">
+	  	<div class="full-slider-box f-slide-1">
+			<div class="slider-text-container">
+			<div class="f-slider-text">
+			<span>Welcome to</span>
+			<strong> NEWJEANS <br>Merchandise Shop</strong>
+			<a href="#" class="f-slider-btn"> Shop Now</a>
+			</div>
+			</div>
+		</div>
+	  </li>
+	   <li class="item-a">
+	  	<div class="full-slider-box f-slide-2">
+			<div class="slider-text-container">
+			<div class="f-slider-text">
+			<span>Welcome to</span>
+			<strong> NEWJEANS <br>Merchandise Shop</strong>
+			<a href="#" class="f-slider-btn"> Shop Now</a>
+			</div>
+			</div>
+		</div>
+	  </li>
+	   <li class="item-a">
+	  	<div class="full-slider-box f-slide-3">
+			<div class="slider-text-container">
+			<div class="f-slider-text">
+			<span>Welcome to</span>
+			<strong> NEWJEANS <br>Merchandise Shop</strong>
+			<a href="#" class="f-slider-btn"> Shop Now</a>
+			</div>
+			</div>
+		</div>
+	  </li>
+	</ul>
+
+	<section id="categories">
+        <div class="featured-heading">
+            <h2>Categories</h2>
+        </div>
+        <ul id="autoWidth" class="cs-hidden">
+      		<li class="item">
+                <div class="feature-box">
+                    <a href="#albums">
+                        <img src="images/weverse_ver.png"/>
+                    </a>
+                </div>  
+                <span>Album</span>			
+      		</li> 
+      		<li class="item">
+                <div class="feature-box">
+                    <a href="#omg">
+                        <img src="images/omg1.png"/>
+                    </a>
+                </div>  
+                <span>OMG</span>			
+      		</li>   		
+      		<li class="item">
+                <div class="feature-box">
+                    <a href="#nu+jeans">
+                        <img src="images/nu+_jeans1.png"/>
+                    </a>
+                </div>  
+                <span>NU+JEANS</span>			
+      		</li> 
+      		<li class="item">
+                <div class="feature-box">
+                    <a href="#newjeans">
+                        <img src="images/new_jeans1.png"/>
+                    </a>
+                </div>  
+                <span>New Jeans</span>			
+      		</li> 
+      		<li class="item">
+                <div class="feature-box">
+                    <a href="#ador">
+                        <img src="images/ador1.png"/>
+                    </a>
+                </div>  
+                <span>ADOR</span>			
+      		</li> 
+      		<li class="item">
+                <div class="feature-box">
+                    <a href="#seasons_greetings">
+                        <img src="images/seasons_greetings.png"/>
+                    </a>
+                </div>  
+                <span>Season's Greetings</span>			
+      		</li>  		
+        </ul>
+    </section>
+
+    <section id="products">
+        <div class="products-heading">
+            <h2> All Products </h2>
+        </div>
+        <section class="shop container">
+            <div class="shop-content">
+                <div class="product-box">
+                    <img src="images/weverse_ver.png" class="product-img">
+                    <h2 class="product-title">NewJeans 1st EP 'New Jeans' Weverse Album Ver.</h2>
+                    <span class="price">$10.12</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/bluebook_random.png" class="product-img">
+                    <h2 class="product-title">NewJeans 1st EP 'New Jeans' Bluebook Ver. (Random)</h2>
+                    <span class="price">$17.46</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/bluebook_set.png" class="product-img">
+                    <h2 class="product-title">NewJeans 1st EP 'New Jeans' Bluebook Ver. (Set)</h2>
+                    <span class="price">$104.79</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/red_bag_ver.png" class="product-img">
+                    <h2 class="product-title">NewJeans 1st EP 'New Jeans' Bag (Red) Ver. (LIMITED)</h2>
+                    <span class="price">$20.90</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/black_bag_ver.png" class="product-img">
+                    <h2 class="product-title">NewJeans 1st EP 'New Jeans' Bag (Black) Ver. (LIMITED)</h2>
+                    <span class="price">$20.90</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/white_bag_ver.png" class="product-img">
+                    <h2 class="product-title">NewJeans 1st EP 'New Jeans' Bag (White) Ver. (LIMITED)</h2>
+                    <span class="price">$20.90</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/weverse_omg.png" class="product-img">
+                    <h2 class="product-title">NewJeans Weverse Album Ver.</h2>
+                    <span class="price">$10.12</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/omg_random.png" class="product-img">
+                    <h2 class="product-title">NewJeans 'OMG' Message Card Ver. (Random)</h2>
+                    <span class="price">$13.74</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/omg_set.png" class="product-img">
+                    <h2 class="product-title">NewJeans 'OMG' Message Card Ver. (Set)</h2>
+                    <span class="price">$82.49</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans2.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS DANCING TOPPER</h2>
+                    <span class="price">$27.87</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans3.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS HEART TOPPER</h2>
+                    <span class="price">$27.87</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans4.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS CAKE KNIFE</h2>
+                    <span class="price">$13.93</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans5.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS NAPKIN & HOLDER SET</h2>
+                    <span class="price">$32.51</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans6.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS MINI POP-UP CARD SET</h2>
+                    <span class="price">$12.07</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans7.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS LETTER POUCH</h2>
+                    <span class="price">$24.15</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans8.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS PAPER ORNAMENT</h2>
+                    <span class="price">$12.07</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/nu+_jeans9.png" class="product-img">
+                    <h2 class="product-title">NU+JEANS GARLAND</h2>
+                    <span class="price">$16.72</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans1.png" class="product-img">
+                    <h2 class="product-title">TOKKI KEYRING</h2>
+                    <span class="price">$13.00</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans2.png" class="product-img">
+                    <h2 class="product-title">ACRYLIC RING</h2>
+                    <span class="price">$10.21</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans3.png" class="product-img">
+                    <h2 class="product-title">CROP TEE</h2>
+                    <span class="price">$36.23</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans4.png" class="product-img">
+                    <h2 class="product-title">MASKING TAPE (ATTENTION / ILLUSTRATION)</h2>
+                    <span class="price">$6.50</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans5.png" class="product-img">
+                    <h2 class="product-title">ACRYLIC TOPPER SET</h2>
+                    <span class="price">$15.79</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans6.png" class="product-img">
+                    <h2 class="product-title">PHOTO SET VER. 1</h2>
+                    <span class="price">$13.93</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans7.png" class="product-img">
+                    <h2 class="product-title">MINI POSTER SET VER. 1</h2>
+                    <span class="price">$13.93</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans8.png" class="product-img">
+                    <h2 class="product-title">KEYRING</h2>
+                    <span class="price">$12.07</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans9.png" class="product-img">
+                    <h2 class="product-title">NOTE BOARD</h2>
+                    <span class="price">$16.72</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans10.png" class="product-img">
+                    <h2 class="product-title">PHONE CASE (GALAXY)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans11.png" class="product-img">
+                    <h2 class="product-title">TOKKI RING</h2>
+                    <span class="price">$12.07</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans12.png" class="product-img">
+                    <h2 class="product-title">TEE (WHITE)</h2>
+                    <span class="price">$36.23</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans13.png" class="product-img">
+                    <h2 class="product-title">TEE (BLUE)</h2>
+                    <span class="price">$36.23</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans14.png" class="product-img">
+                    <h2 class="product-title">BADGE (TOKKI)</h2>
+                    <span class="price">$9.29</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans15.png" class="product-img">
+                    <h2 class="product-title">PTOKKI PHONE CASE (GALAXY)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans16.png" class="product-img">
+                    <h2 class="product-title">TOKKI PHONE CASE (IPHONE)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans17.png" class="product-img">
+                    <h2 class="product-title">SMARTTOK (TOKKI)</h2>
+                    <span class="price">$13.93</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans18.png" class="product-img">
+                    <h2 class="product-title">GLASS (ILLUSTRATION)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans19.png" class="product-img">
+                    <h2 class="product-title">STICKER PACK (GLITTER)</h2>
+                    <span class="price">$11.14</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans20.png" class="product-img">
+                    <h2 class="product-title">STICKER PACK (LOGO)</h2>
+                    <span class="price">$8.36</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans21.png" class="product-img">
+                    <h2 class="product-title">PHONE CASE (IPHONE)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans22.png" class="product-img">
+                    <h2 class="product-title">MASKING TAPE (TOKKI / TRACK LIST)</h2>
+                    <span class="price">$5.57</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans23.png" class="product-img">
+                    <h2 class="product-title">MUG</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans24.png" class="product-img">
+                    <h2 class="product-title">STICKER PACK</h2>
+                    <span class="price">$9.29</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans25.png" class="product-img">
+                    <h2 class="product-title">SMARTTOK</h2>
+                    <span class="price">$13.93</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/new_jeans26.png" class="product-img">
+                    <h2 class="product-title">BADGE</h2>
+                    <span class="price">$8.36</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador1.png" class="product-img">
+                    <h2 class="product-title">BADGE VER. 1</h2>
+                    <span class="price">$8.36</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador2.png" class="product-img">
+                    <h2 class="product-title">SMARTTOK</h2>
+                    <span class="price">$13.93</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador3.png" class="product-img">
+                    <h2 class="product-title">CROP TEE</h2>
+                    <span class="price">$36.23</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador4.png" class="product-img">
+                    <h2 class="product-title">SWEATSHIRT (MELANGE GREY)</h2>
+                    <span class="price">$64.10</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador5.png" class="product-img">
+                    <h2 class="product-title">SWEATSHIRT (NAVY)</h2>
+                    <span class="price">$64.10</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador6.png" class="product-img">
+                    <h2 class="product-title">TEE</h2>
+                    <span class="price">$36.23</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador7.png" class="product-img">
+                    <h2 class="product-title">LOGO BAG</h2>
+                    <span class="price">$20.43</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador8.png" class="product-img">
+                    <h2 class="product-title">BADGE VER. 2</h2>
+                    <span class="price">$8.36</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador9.png" class="product-img">
+                    <h2 class="product-title">KEYRING</h2>
+                    <span class="price">$20.43</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>		
+                <div class="product-box">
+                    <img src="images/ador10.png" class="product-img">
+                    <h2 class="product-title">GLASS</h2>
+                    <span class="price">$14.86</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador11.png" class="product-img">
+                    <h2 class="product-title">CHOCO PHONE CASE (IPHONE)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador12.png" class="product-img">
+                    <h2 class="product-title">CHOCO PHONE CASE (GALAXY)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador13.png" class="product-img">
+                    <h2 class="product-title">LOGO PHONE CASE (IPHONE)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador14.png" class="product-img">
+                    <h2 class="product-title">LOGO PHONE CASE (GALAXY)</h2>
+                    <span class="price">$18.58</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/ador15.png" class="product-img">
+                    <h2 class="product-title">SWEATSHIRT (WHITE)</h2>
+                    <span class="price">$64.10</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/seasons_greetings.png" class="product-img">
+                    <h2 class="product-title">NewJeans 2023 SEASON'S GREETINGS</h2>
+                    <span class="price">$8.36</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        /* ================= ORIGINAL JQUERY SCRIPTS ================= */
+        //---------------SEARCH BAR--------------------
+		$(document).on('click','.search', function(){
+			$('.search-bar').addClass('search-bar-active')
+		});
+
+		$(document).on('click','.search-cancel', function(){
+			$('.search-bar').removeClass('search-bar-active')
+		});
+
+		//---------------LOG IN FORM --------------------------
+		$(document).on('click','.user', function(){
+			$('.form').addClass('login-active')
+		});
+
+		$(document).on('click','.form-cancel', function(){
+			$('.form').removeClass('login-active')
+		});
+
+		//-----------------SIGN UP FORM-----------------------
+		$(document).on('click','.sign-up', function(){
+			$('.form').addClass('sign-up-active')
+		});
+
+		$(document).on('click','.form-cancel', function(){
+			$('.form').removeClass('sign-up-active')
+		});
+
+		$(document).on('click','.have-account', function(){
+			$('.form').removeClass('sign-up-active')
+		});
+
+		//-----FULL SLIDER SCRIPT--------------
+		$(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeight:true,
+                auto:true,
+                item:1,
+                slideMargin:0,
+                loop:true
+            });
+        });
+
+		//FEATURE SLIDE
+        $(document).ready(function() {
+            $('#autoWidth').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth').removeClass('cS-hidden');
+                } 
+            });  
+        });
+
+		/*------------------FIXED MENU-------------*/
+        $(window).scroll(function(){
+            if($(document).scrollTop() > 50 ){
+                $('.nav').addClass('fix-nav');
+            }
+            else {
+                $('.nav').removeClass('fix-nav');
+
+            }
+        });
+
+        /* ================= NEW VANILLA JS CART LOGIC ================= */
+        
+        // cart open close variables
+        let cartIcon = document.querySelector('#cart-icon');
+        let cart = document.querySelector('.cart');
+        let closeCart = document.querySelector('#close-cart');
+
+        // Open Cart
+        cartIcon.onclick = () => {
+            cart.classList.add("cart-active");
+        };
+
+        // Close Cart
+        closeCart.onclick = () => {
+            cart.classList.remove("cart-active");
+        };
+
+        // Making Add to cart work
+        if (document.readyState == 'loading') {
+            document.addEventListener('DOMContentLoaded', ready);
+        } else {
+            ready();
+        }
+
+        function ready() {
+            // Remove item from cart
+            var removeCartButtons = document.getElementsByClassName('cart-remove');
+            for (var i = 0; i < removeCartButtons.length; i++) {
+                var button = removeCartButtons[i];
+                button.addEventListener('click', removeCartItem);
+            }
+            // Quantity change
+            var quantityInputs = document.getElementsByClassName('cart-quantity');
+            for (var i = 0; i < quantityInputs.length; i++) {
+                var input = quantityInputs[i];
+                input.addEventListener('change', quantityChanged);
+            }
+            // Add to cart
+            var addCart = document.getElementsByClassName('add-cart');
+            for (var i = 0; i < addCart.length; i++) {
+                var button = addCart[i];
+                button.addEventListener('click', addCartClicked);
+            }
+            // Buy button
+            document.getElementsByClassName('btn-buy')[0].addEventListener('click', buyButtonClicked);
+        }
+
+        // Buy button function
+        function buyButtonClicked() {
+            alert('Your Order is placed');
+            var cartContent = document.getElementsByClassName('cart-content')[0];
+            while (cartContent.hasChildNodes()) {
+                cartContent.removeChild(cartContent.firstChild);
+            }
+            updateTotal();
+        }
+
+        // Remove cart item
+        function removeCartItem(event) {
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.remove();
+            updateTotal();
+        }
+
+        // Quantity changed
+        function quantityChanged(event) {
+            var input = event.target;
+            if (isNaN(input.value) || input.value <= 0) {
+                input.value = 1;
+            }
+            updateTotal();
+        }
+
+        // Add to cart click event
+        function addCartClicked(event) {
+            var button = event.target;
+            var shopProducts = button.parentElement;
+            var title = shopProducts.getElementsByClassName('product-title')[0].innerText;
+            var price = shopProducts.getElementsByClassName('price')[0].innerText;
+            var productImg = shopProducts.getElementsByClassName('product-img')[0].src;
+            addProductToCart(title, price, productImg);
+            updateTotal();
+            cart.classList.add("cart-active"); 
+        }
+
+        function addProductToCart(title, price, productImg) {
+            var cartShopBox = document.createElement('div');
+            cartShopBox.classList.add('cart-box');
+            var cartItems = document.getElementsByClassName('cart-content')[0];
+            var cartItemsNames = cartItems.getElementsByClassName('cart-product-title');
+            for (var i = 0; i < cartItemsNames.length; i++) {
+                if (cartItemsNames[i].innerText == title) {
+                    alert("You have already added this item to cart");
+                    return;
+                }
+            }
+
+            var cartBoxContent = `
+                <img src="${productImg}" alt="" class="cart-img">
+                <div class="detail-box">
+                    <div class="cart-product-title">${title}</div>
+                    <div class="cart-price">${price}</div>
+                    <input type="number" value="1" class="cart-quantity">
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>`;
+            
+            cartShopBox.innerHTML = cartBoxContent;
+            cartItems.append(cartShopBox);
+
+            cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem);
+            cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged);
+        }
+
+        // Update Total Function
+        function updateTotal() {
+            var cartContent = document.getElementsByClassName('cart-content')[0];
+            var cartBoxes = cartContent.getElementsByClassName('cart-box');
+            var total = 0;
+            for (var i = 0; i < cartBoxes.length; i++) {
+                var cartBox = cartBoxes[i];
+                var priceElement = cartBox.getElementsByClassName('cart-price')[0];
+                var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+                var price = parseFloat(priceElement.innerText.replace("$", ""));
+                var quantity = quantityElement.value;
+                total = total + (price * quantity);
+            }
+            // If price contains some cents
+            total = Math.round(total * 100) / 100;
+            
+            document.getElementsByClassName('total-price')[0].innerText = "$" + total;
+        }
+    </script>
+</body>
+</html>
